@@ -1,0 +1,122 @@
+.coco-layout_wrap {
+    background: #ffffff;
+}
+.ccs-login-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 961px;
+    margin: 0 auto;
+    padding: 56px 0;
+    .ccs-login-top {
+        display: flex;
+        justify-content: center;
+        > div {
+            &:nth-last-child(2) {
+                padding-right: 16px;
+            }
+        }
+    }
+    .ccs-login-middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 21.5px;
+
+        .login-middle--line {
+            content: '';
+            width: 46%;
+            height: 2px;
+            border-top: 1px solid #adadad;
+        }
+        > span {
+            width: 6%;
+            text-align: center;
+            font-family: NunitoSansRegular;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .ccs-login-bottom {
+        width: 100%;
+        margin-top: 28.5px;
+        display: flex;
+        justify-content: space-between;
+        .login-bottom--left {
+            width: 45%;
+            .bottom--left_title {
+                font-family: NunitoSansBold;
+                font-size: 24px;
+                line-height: 30px;
+                color: #000000;
+                text-align: center;
+            }
+            .ccs-input-login {
+                margin-top: 24px;
+                &:nth-last-child(3) {
+                    margin-top: 32px;
+                }
+            }
+            .bottom-left_radiogr {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 19px;
+                .ccs-radio-cpn {
+                    width: 30%;
+                }
+            }
+            .bottom-left_selectbox {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                .selectbox__item {
+                    > select {
+                        min-width: 136px;
+                        padding: 7px 24px;
+                    }
+                }
+            }
+            .c-checkbox-lg1 {
+                margin-top: 16px;
+            }
+            .c-checkbox-lg2 {
+                margin-top: 19px;
+            }
+            .bottom-left_btn__login {
+                margin-top: 24px;
+                > button {
+                    width: 100%;
+                }
+            }
+        }
+        .login-bottom--right {
+            width: 45%;
+            padding: 0 26px;
+            .bottom--right_title {
+                font-family: NunitoSansBold;
+                font-size: 24px;
+                line-height: 30px;
+                color: #000000;
+                text-align: center;
+            }
+            .bottom--right_des {
+                color: #000000;
+                text-align: center;
+                .right_des__header {
+                    margin-top: 31px;
+                    font-family: NunitoSansSemiBold;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                .right_des_sub {
+                    margin-top: 11px;
+                    font-family: NunitoSansRegular;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

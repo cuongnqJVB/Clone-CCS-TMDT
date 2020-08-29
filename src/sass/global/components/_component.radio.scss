@@ -1,0 +1,47 @@
+.custom-control {
+    > input {
+        &:checked + .custom-control-label:after {
+            background: #c73030;
+        }
+        &:focus ~ .custom-control-label::before {
+            box-shadow: none;
+            // box-shadow: 0 0 0 0.1rem #f3f3f3;
+            // -moz-box-shadow: 0 0 0 0.1rem #f3f3f3;
+            // -webkit-box-shadow: 0 0 0 0.1rem #f3f3f3;
+        }
+    }
+    .custom-control-input {
+        height: 1rem;
+    }
+    .custom-control-label {
+        &:before {
+            border-color: #e5e4e4 !important;
+            background-color: #e5e4e4 !important;
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+        &:after {
+            top: 0.45rem;
+            left: -1.3rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background: transparent;
+            background-image: none !important;
+        }
+    }
+}
+
+.ccs-radio-disable {
+    .custom-control-label {
+        color: #bebebe;
+    }
+    &:checked + .custom-control-label:after {
+        background: #e5e4e4;
+    }
+}
+
+.rd-mr-0 {
+    margin-right: 0;
+}
